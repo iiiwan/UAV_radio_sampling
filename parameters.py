@@ -1,0 +1,28 @@
+BATCH_SIZE = 1024 #8
+INPUT_DIM = 4
+EMBEDDING_DIM = 128
+SAMPLE_SIZE = 40
+K_SIZE = 40 + 2
+BUDGET_RANGE = (15, 16)
+SAMPLE_LENGTH = 0.2
+GEN_RANGE = (0.1, 0.3)  # Distance range for generating new samples
+
+ADAPTIVE_AREA = True
+ADAPTIVE_TH = 0.01
+
+USE_GPU = True
+USE_GPU_GLOBAL = True
+CUDA_DEVICE = [0]
+NUM_META_AGENT = 4 #6
+LR = 1e-4
+GAMMA = 1
+DECAY_STEP = 32
+SUMMARY_WINDOW = 8
+FOLDER_NAME = 'd=512'
+model_path = f'model/{FOLDER_NAME}'
+train_path = f'train/{FOLDER_NAME}'
+gifs_path = f'kGP_gif/{FOLDER_NAME}'
+LOAD_MODEL = False
+SAVE_IMG_GAP = 500
+REWARD= []
+LOSS = []
